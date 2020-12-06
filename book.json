@@ -1,0 +1,16 @@
+{
+  "language": "ja",
+  "title": "Git Tutorial",
+    "description": "This is a tutorial of git",
+  "plugins": [
+    "theme-api",
+    "anchors",
+    "expand-active-chapter",
+    "collapsible-chapters"
+  ],
+  "pluginsConfig": {
+    "theme-api": {
+      "theme": "dark"
+    }
+  }
+}
