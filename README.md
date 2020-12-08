@@ -6,4 +6,4 @@
 実際に環境を用意して手元で動かしてみるとより理解できるかと思います。
 
 # Chapters
- - [Chapter1](chapters/chapter_1.md)
+ - [Gitの基本知識](chapters/chapter_1.md)
