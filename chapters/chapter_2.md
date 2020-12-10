@@ -62,5 +62,5 @@ git commit -m "add: sample.jsの空ファイルを追加"
 ```
 git push origin master
 ```
-※masterに直接pushすることは、チーム開発において基本的にはありませんが一例として記載しています。ｓ
+※masterに直接pushすることは、チーム開発において基本的にはありませんが一例として記載しています。
 {% endmethod %}
