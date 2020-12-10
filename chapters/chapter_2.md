@@ -35,3 +35,17 @@ git add <file>
 git add *.js
 ```
 {% endmethod %}
+
+{% method %}
+
+### `commit`
+**インデックスに追加された変更内容をローカルリモートリポジトリに反映させます。**
+
+`git commit -m "任意のコメント"`とすることで、コミットメッセージを残すことができます。
+
+
+{% sample lang="bash" %}
+```
+git commit -m "add: sample.jsの空ファイルを追加"
+```
+{% endmethod %}
