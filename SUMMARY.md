@@ -8,3 +8,4 @@
     - [git commit --amend](chapters/chapter_4.md)
     - [git revert](chapters/chapter_5.md)
     - [git reset](chapters/chapter_6.md)
+    - [git reflog](chapters/chapter_7.md)
