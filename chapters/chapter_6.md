@@ -75,3 +75,28 @@
 </div>
 
 そうすると、作業ディレクトリにコミットしたものと、`git add`した内容が戻っていることが確認できます。
+
+### `--hard`
+`--hard`はステージングエリアにも作業ディレクトリにも残さず、コミットをまるごと消したいときに使われます。
+
+【使い方】
+
+①
+`sample_2.html`を作成し、コミット
+`sample_3.html`を作成し、ステージに`git add`
+
+<div style="text-align: center;">
+<img src="../images/add-commit.jpg" alt="git-addとコミット画像">
+</div>
+
+<div style="text-align: center;">
+<img src="../images/git-add-commit-sourcetree.jpg" alt="git-add画像">
+</div>
+
+②`git reset --hard HEAD^`でステージしたもの、コミットしたものを取り消す。
+
+<div style="text-align: center;">
+<img src="../images/reset-hard.jpg" alt="リセットハード画像">
+</div>
+
+そうすると、ステージにも作業ディレクトリにも、今回の作業の内容は残らなくなることが確認できます。
