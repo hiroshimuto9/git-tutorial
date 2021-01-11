@@ -261,6 +261,43 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="git-reset"><a name="git-reset" class="plugin-anchor" href="#git-reset"><i class="fa fa-link" aria-hidden="true"></i></a><code>git reset</code></h2>
+<p><code>git reset</code>&#x306B;&#x306F;3&#x7A2E;&#x985E;&#x306E;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x5B58;&#x5728;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<ul>
+<li><p><code>git reset --soft</code></p>
+</li>
+<li><p><code>git reset --mixed</code></p>
+</li>
+<li><p><code>git reset --hard</code></p>
+</li>
+</ul>
+<p>&#x305D;&#x308C;&#x305E;&#x308C;&#x5F71;&#x97FF;&#x3092;&#x4E0E;&#x3048;&#x308B;&#x7BC4;&#x56F2;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>--soft&#xFF1A;HEAD&#x306E;&#x4F4D;&#x7F6E;&#x306E;&#x307F;</p>
+<p>--mixed&#xFF1A;HEAD&#x306E;&#x4F4D;&#x7F6E;&#x30FB;&#x30B9;&#x30C6;&#x30FC;&#x30B8;</p>
+<p>--hard&#xFF1A;HEAD&#x306E;&#x4F4D;&#x7F6E;&#x30FB;&#x30B9;&#x30C6;&#x30FC;&#x30B8;&#x30FB;&#x4F5C;&#x696D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;</p>
+<p>&#x203B;&#x30B9;&#x30C6;&#x30FC;&#x30B8;=&#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#x3067;&#x3059;&#x3002;</p>
+<div style="text-align: center;">
+<img src="../images/worktree.jpg" alt="&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x6982;&#x5FF5;&#x56F3;">
+</div>
+
+<h3 id="-soft"><a name="-soft" class="plugin-anchor" href="#-soft"><i class="fa fa-link" aria-hidden="true"></i></a><code>--soft</code></h3>
+<p><code>--soft</code>&#x306F;&#x76F4;&#x524D;&#x306E;commit&#x3092;&#x3084;&#x308A;&#x76F4;&#x3057;&#x305F;&#x3068;&#x304D;&#x306B;&#x4FBF;&#x5229;&#x3067;&#x3059;&#x3002;</p>
+<p>&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306B;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x3057;&#x3066;&#x3057;&#x307E;&#x3063;&#x305F;&#x3082;&#x306E;&#x3092;&#x3001;&#x30B9;&#x30C6;&#x30FC;&#x30B8;&#x30F3;&#x30B0;&#x30A8;&#x30EA;&#x30A2;&#x306B;&#x623B;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3010;&#x4F7F;&#x3044;&#x65B9;&#x3011;</p>
+<p>&#x2460;<code>sample_2.html</code>&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x30B3;&#x30DF;&#x30C3;&#x30C8;</p>
+<div style="text-align: center;">
+<img src="../images/commit3.jpg" alt="&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x753B;&#x50CF;">
+</div>
+
+<p>&#x2461;&#x4ED6;&#x306B;&#x3082;&#x4FEE;&#x6B63;&#x3057;&#x305F;&#x3044;&#x7B87;&#x6240;&#x304C;&#x3042;&#x3063;&#x305F;&#x305F;&#x3081;&#x3001;<code>git reset --soft HEAD^</code>&#x3067;&#x30B9;&#x30C6;&#x30FC;&#x30B8;&#x30F3;&#x30B0;&#x30A8;&#x30EA;&#x30A2;&#x306B;&#x5DFB;&#x304D;&#x623B;&#x3059;&#x3002;</p>
+<div style="text-align: center;">
+<img src="../images/reset-soft.jpg" alt="&#x30EA;&#x30BB;&#x30C3;&#x30C8;&#x30BD;&#x30D5;&#x30C8;&#x753B;&#x50CF;">
+</div>
+
+<div style="text-align: center;">
+<img src="../images/reset-soft-sourcetree.jpg" alt="&#x30EA;&#x30BB;&#x30C3;&#x30C8;&#x30BD;&#x30D5;&#x30C8;&#x753B;&#x50CF;">
+</div>
+
+<p>&#x305D;&#x3046;&#x3059;&#x308B;&#x3068;&#x3001;&#x30B9;&#x30C6;&#x30FC;&#x30B8;&#x30F3;&#x30B0;&#x30A8;&#x30EA;&#x30A2;&#x306B;&#x5909;&#x66F4;&#x3057;&#x305F;&#x5185;&#x5BB9;&#x304C;&#x623B;&#x3063;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
 
                                 
                                 </section>
@@ -294,7 +331,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git reset","level":"1.4.3","depth":2,"next":{"title":"git reflog","level":"1.4.4","depth":2,"path":"chapters/chapter_7.md","ref":"chapters/chapter_7.md","articles":[]},"previous":{"title":"git revert","level":"1.4.2","depth":2,"path":"chapters/chapter_5.md","ref":"chapters/chapter_5.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","anchors","expand-active-chapter","collapsible-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"expand-active-chapter":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Git Tutorial","language":"ja","gitbook":"*","description":"This is a tutorial of git"},"file":{"path":"chapters/chapter_6.md","mtime":"2021-01-07T17:07:32.143Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-07T13:30:26.208Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git reset","level":"1.4.3","depth":2,"next":{"title":"git reflog","level":"1.4.4","depth":2,"path":"chapters/chapter_7.md","ref":"chapters/chapter_7.md","articles":[]},"previous":{"title":"git revert","level":"1.4.2","depth":2,"path":"chapters/chapter_5.md","ref":"chapters/chapter_5.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-api","anchors","expand-active-chapter","collapsible-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"dark"},"expand-active-chapter":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Git Tutorial","language":"ja","gitbook":"*","description":"This is a tutorial of git"},"file":{"path":"chapters/chapter_6.md","mtime":"2021-01-11T11:39:58.697Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-07T13:30:26.208Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
