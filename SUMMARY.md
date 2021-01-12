@@ -10,3 +10,4 @@
     - [git reset](chapters/chapter_6.md)
     - [git reflog](chapters/chapter_7.md)
     - [git stash](chapters/chapter_8.md)
+    - [git cherry-pick](chapters/chapter_9.md)
